@@ -1,0 +1,181 @@
+.logo{ max-width: 150px; max-height: 100px;}
+
+body{background-color: rgb(102, 13, 10);
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+#menuToggle{
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next{top: 90%;}
+
+.carouselsize{padding-bottom: 50px;}
+
+#lanca iframe{width: 500px; height: 300px;}
+
+h1{margin: 0 auto; padding-top: 10px; padding-bottom: 10px;}
+
+.header{background: black; border-radius: 5px; padding: 10px;}
+
+.menu1{position:absolute;
+top: 10px;
+left: 50%;
+margin-left: -300px;
+}
+
+p {text-align:justify;}
+
+.header a:hover{color: saddlebrown;}
+
+.header a{color: rgb(131, 15, 15); font-weight: bold; font-size: 1.2em; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin-top: 0px; padding: 10px 10px 10px 0px;}
+
+.lanca{margin: 0px;background: black;padding: 20px; border-radius: 10px; margin: 10px; padding-bottom: -10px;}
+
+.destaq{margin: 0px;background: black;padding: 20px; border-radius: 10px; margin: 10px;}
+
+.avali{margin: 0px;background: black;padding: 20px; border-radius: 10px; margin: 10px;}
+
+.entrevi{margin: 0px;background: black;padding: 20px; border-radius: 10px; margin: 10px;}
+
+.novid{margin: 0px;background: black;padding: 20px; border-radius: 10px; margin: 10px;}
+
+.destaq img{width: 100%; height: 100%;}
+
+.avali img{width: 20%; border-radius: 40px; margin: 0 auto; display: flex;}
+
+.avali p{padding-top: 10px; text-align: center;}
+
+.entrevi iframe{max-width: 100%; max-height: 100%;}
+
+.entrevi > div{margin-bottom: 70px;}
+
+.entrevi p{ text-align: center; font-size: 1.4em; font-weight:bold; margin-top: -10px;}
+
+.destaq iframe{margin-bottom: 0px;}
+
+.destaq p{text-align: center; font-size: 1.2em;margin-top: 0px;}
+
+.noticias img{ width: 40%; height: 50%;}
+
+.noticias a{text-decoration: none; color: white; display: block; width: 60%;height: 20%;}
+
+.sobre{height: 33%;}
+
+.editores{height: 33%;}
+
+.redes{height: 33%;}
+
+.noticias p{display: block; font-size: x-large;}
+
+.filmes img{ height: 90%; border-radius: 5px;}
+
+.footer p{ text-align:center;}
+
+.redes img{width: 100%; align-items: center;}
+
+.redes a{display: inline; width: 30%; margin: auto auto;}
+
+.footer{background: black; padding-top: 10px;padding-bottom: 2.5px; border-radius: 10px; font-weight: bold; text-align: center;}
+
+@media screen and (max-width: 800px) {
+    .noticias img{display: none;}
+
+    .noticias a{width: 100%;}
+
+    .noticias p{font-size: 0.9em;}
+
+    .noticias h3{text-align: justify;}
+
+    .new_box{border: 2px solid grey;margin: 10px 0px; padding: 10px 0px; border-radius: 10px;}
+
+    .sobre{border: 2px solid grey;margin: 10px 0px; padding: 10px 0px; border-radius: 10px;}
+
+    .sobre p{font-size: 0.9em;}
+
+    .editores{border: 2px solid grey;margin: 10px 0px; padding: 10px 0px; border-radius: 10px;}
+}
+
+
+@media screen and (max-width: 991px) {
+
+    .header{
+        position:fixed;
+        top:0px;
+        z-index: 999;
+        max-width: 100% !important;
+    }
+
+    .container_nav {
+        display: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main{
+        margin-top: 140px;
+    }
+
+    .menu1 {
+        display: flex;
+        position: fixed;
+        flex-wrap: wrap;
+        align-content: center;
+        top: 0px;
+        left: 300px;
+        width: 100%;
+        height: 0%;
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        -webkit-transition: height 0.3s;
+        -moz-transition: height 0.3s;
+        -ms-transition: height 0.3s;
+        -o-transition: height 0.3s;
+        transition: height 0.3s;
+    }
+
+    .menu1 a {
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    .menu-icon {
+        width: 50px;
+        height: inherit;
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 40px;
+        line-height: 60px;
+        color: white;
+        z-index: 999;
+    }
+    #menuToggle:checked ~ label i:nth-child(2) {
+        display: block;
+    }
+    #menuToggle:checked ~ label i:first-child {
+    display: none;
+    }
+    #menuToggle:not(:checked) ~ label i:first-child {
+    display: block;
+    }
+    #menuToggle:not(:checked) ~ label i:nth-child(2) {
+    display: none;
+    }
+    
+    #menuToggle:checked ~ nav {
+        height: 100%;
+    }
+    .menu-icon i {
+        font-size: 1.7em;
+    }
+}
