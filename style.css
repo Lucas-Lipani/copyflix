@@ -13,22 +13,20 @@ body{background-color: rgb(102, 13, 10);
     display: none;
 }
 
+.header{background: black; border-radius: 5px; padding: 10px; width: 100%;}
+
+.menu1{position:absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -300px;
+    }
+
 .carousel-control-prev,
 .carousel-control-next{top: 90%;}
 
 .carouselsize{padding-bottom: 50px;}
 
-#lanca iframe{max-width: 500px; max-height: 300px; width: 100%; height: 100%;}
-
 h1{margin: 0 auto; padding-top: 10px; padding-bottom: 10px; text-align: center;}
-
-.header{background: black; border-radius: 5px; padding: 10px;}
-
-.menu1{position:absolute;
-top: 10px;
-left: 50%;
-margin-left: -300px;
-}
 
 p {text-align:justify;}
 
@@ -49,6 +47,8 @@ p {text-align:justify;}
 .avali img{width: 20%; border-radius: 40px; margin: 0 auto; display: flex;}
 
 .avali p{padding-top: 10px; text-align: center;}
+
+.lancamentoimg {width:100%;}
 
 .filmes{padding-bottom: 20px;}
 
@@ -86,7 +86,7 @@ p {text-align:justify;}
 
 .footer p{ text-align:center;}
 
-.redes img{width: 100%; align-items: center;}
+.redes img{width: 100%;}
 
 .redes a{display: inline; width: 30%; margin: auto auto;}
 
@@ -106,6 +106,8 @@ p {text-align:justify;}
     .sobre{border: 2px solid grey;margin: 10px 0px; padding: 10px 0px; border-radius: 10px;}
 
     .sobre p{font-size: 0.9em;}
+
+    .editores{border: 2px solid grey;margin: 10px 0px; padding: 10px 0px; border-radius: 10px;}
 
     .editores{border: 2px solid grey;margin: 10px 0px; padding: 10px 0px; border-radius: 10px;}
 }
